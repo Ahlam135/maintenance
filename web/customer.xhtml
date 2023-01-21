@@ -1,0 +1,197 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+    <h:head>
+        <title>Facelet Title</title>
+        <style> 
+                    body{
+                background-color:black;
+                text-align: center;
+                background-size: 100%;
+                margin: 0px;
+            }
+            .d2{
+                        background-image: url("image/carr.webp");    
+                        position: fixed;
+                        right: 200px;
+                        top: 230px;
+            }
+                    .l1{
+                        position: fixed;
+                        right: 750px;
+                        top: 230px;
+                        color:white;
+                         font-style:italic;
+                        font-size: 1.7rem; 
+                       
+                    }
+                         
+                    .l2{
+                        position: fixed;
+                        right: 770px;
+                        top: 270px;
+                        color:white;
+                         font-style:italic;
+                        font-size: 1.7rem; 
+                       
+                    }
+                         
+                    .l3{
+                        position: fixed;
+                        right: 760px;
+                        top: 310px;
+                        color:white;
+                         font-style:italic;
+                        font-size: 1.7rem; 
+                       
+                    }
+                         
+                    .l4{
+                        position: fixed;
+                        right: 720px;
+                        top: 350px;
+                        color:white;
+                         font-style:italic;
+                        font-size: 1.7rem; 
+                       
+                    }
+                     .l5{
+                        position: fixed;
+                        right: 790px;
+                        top: 390px;
+                        color:white;
+                         font-style:italic;
+                        font-size: 1.7rem; 
+                       
+                    }
+                    .l6{
+                          position: fixed;
+                        right: 700px;
+                        top: 430px;
+                        color:white;
+                         font-style:italic;
+                        font-size: 1.7rem;
+                    }
+                    .l7{
+                          position: fixed;
+                        right: 700px;
+                        top: 470px;
+                        color:white;
+                         font-style:italic;
+                        font-size: 1.7rem;
+                    }
+                    
+                    .txt{
+                        position: fixed;
+                        right: 400px;
+                        top: 230px;
+                        color:white;
+                         font-style:italic;
+                        font-size: 1rem; 
+                       
+                    }
+                    .txt1{
+                        position: fixed;
+                        right: 400px;
+                        top: 270px;
+                        color:black;
+                         font-style:italic;
+                        font-size: 1rem; 
+                       
+                    }
+                    .txt2{
+                        position: fixed;
+                        right: 400px;
+                        top: 310px;
+                        color:black;
+                         font-style:italic;
+                        font-size: 1rem; 
+                       
+                    }
+                    .txt3{
+                        position: fixed;
+                        right: 400px;
+                        top: 350px;
+                        color:black;
+                         font-style:italic;
+                        font-size: 1rem; 
+                       
+                    }
+                     .txt4{
+                        position: fixed;
+                        right: 400px;
+                        top: 390px;
+                        color:black;
+                         font-style:italic;
+                        font-size: 1rem; 
+                       
+                    }
+                     .txt5{
+                        position: fixed;
+                        right: 400px;
+                        top: 440px;
+                        color:black;
+                         font-style:italic;
+                        font-size: 1rem; 
+                       
+                    }
+                     .txt6{
+                        position: fixed;
+                        right: 400px;
+                        top: 480px;
+                        color:black;
+                         font-style:italic;
+                        font-size: rem; 
+                       
+                    }
+                      .btn{
+                        position: fixed;
+                        right: 500px;
+                        top: 550px;
+                        color:darkslateblue;
+                         font-style:italic;
+                        font-size: 1rem; 
+                       
+                    }
+                    .btn2{
+                        position: fixed;
+                        right: 400px;
+                        top: 550px;
+                        color:darkslateblue;
+                         font-style:italic;
+                        font-size: 1rem; 
+                       
+                    }
+                    
+                    
+        </style>
+    </h:head>
+    <h:body>
+        <h:form>
+           
+            <div class="d1">
+              <label class="l1">Name</label>
+              <label class="l2">Requester Id</label>
+              <label class="l3">Car Model</label>
+              <label class="l4">City</label>
+              <label class="l5">Street Name</label>
+              <label class="l6">Specific location</label>
+               <label class="l7">Plate Number</label>
+              <h:inputText class="txt" value="#{signn.name}"></h:inputText> 
+               <h:inputText class="txt1" value="#{signn.id}"></h:inputText> 
+               <h:inputText class="txt2" value="#{signn.model}"></h:inputText> 
+               <h:inputText class="txt3" value="#{signn.city}"></h:inputText>
+               <h:inputText class="txt4" value="#{signn.streetno}"></h:inputText>
+               <h:inputText class="txt5" value="#{signn.specificloc}"></h:inputText>
+               <h:inputText class="txt6" value="#{signn.plateno}"></h:inputText>
+               <h:commandButton value="Submit" class="btn" action="#{signn.lag}"/>
+                <h:commandButton value="Cancel" class="btn2" />
+                </div>
+            <div class="d2">
+                
+            </div>
+        </h:form>
+    </h:body>
+</html>
+

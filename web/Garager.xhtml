@@ -1,0 +1,171 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+    <h:head>
+        <title>Facelet Title</title>
+        <style> 
+                    body{
+                background-color:black;
+                text-align: center;
+                background-size: 100%;
+                margin: 0px;
+               
+                        }
+                    .labb
+                    {
+                           position: fixed;
+                        right: 8000px;
+                        top: 230px;
+                    }
+                    .dd{
+                      background-image: url("image/final.jpeg");
+                       background-size: 100%;
+                      
+                        right: 60px;
+                        top: 30px;
+                        height:150;
+                        width:300;
+                    }
+                    .ll1{
+                        position: fixed;
+                        right: 730px;
+                        top: 230px;
+                         color:white;
+                         font-style:italic;
+                        font-size: 1.7rem; 
+                       
+                    }
+                         
+                    .ll2{
+                        position: fixed;
+                        right: 670px;
+                        top: 270px;
+                         color:white;
+                         font-style:italic;
+                        font-size: 1.7rem; 
+                       
+                    }
+                         
+                    .ll3{
+                        position: fixed;
+                        right: 630px;
+                        top: 310px;
+                         color:white;
+                         font-style:italic;
+                        font-size: 1.7rem; 
+                       
+                    }
+                         
+                    .ll4{
+                        position: fixed;
+                        right: 750px;
+                        top: 350px;
+                       color:white;
+                         font-style:italic;
+                        font-size: 1.7rem; 
+                       
+                    }
+                     .ll5{
+                        position: fixed;
+                        right: 670px;
+                        top: 390px;
+                        color:white;
+                         font-style:italic;
+                        font-size: 1.7rem; 
+                       
+                    }
+                    
+                     .tt{
+                        position: fixed;
+                        right: 400px;
+                        top: 230px;
+                        color:black;
+                         font-style:italic;
+                        font-size: 1rem; 
+                       
+                    }
+                    .tt1{
+                        position: fixed;
+                        right: 400px;
+                        top: 270px;
+                        color:black;
+                         font-style:italic;
+                        font-size: 1rem; 
+                       
+                    }
+                    .tt2{
+                        position: fixed;
+                        right: 400px;
+                        top: 310px;
+                        color:black;
+                         font-style:italic;
+                        font-size: 1rem; 
+                       
+                    }
+                    .tt3{
+                        position: fixed;
+                        right: 400px;
+                        top: 350px;
+                        color:black;
+                         font-style:italic;
+                        font-size: 1rem; 
+                       
+                    }
+                     .tt4{
+                        position: fixed;
+                        right: 400px;
+                        top: 390px;
+                        color:black;
+                         font-style:italic;
+                        font-size: 1rem; 
+                       
+                    }
+                    
+                    
+                      .bt{
+                        position: fixed;
+                        right: 500px;
+                        top: 500px;
+                        color:darkslateblue;
+                         font-style:italic;
+                        font-size: 1.1rem; 
+                       
+                    }
+                    .bt1{
+                        position: fixed;
+                        right: 400px;
+                        top: 500px;
+                        color:darkslateblue;
+                         font-style:italic;
+                        font-size: 1.1rem; 
+                       
+                    }
+                    inputText{
+                        background-color: rgba(255,255,255,0.5)
+                    }
+                    
+                    
+        </style>
+    </h:head>
+    <h:body></h:body>
+      
+    <h:form>
+        <div class="labb">
+              <label class="ll1">Name</label>
+              <label class="ll2">Garager Id</label>
+              <label class="ll3">Phone Number</label>                                      
+              <label class="ll4">City</label>                                       
+              <label class="ll5">Street Name</label>                            
+               <h:inputText class="tt" value="#{garager.name}" ></h:inputText>
+               <h:inputText class="tt1" value="#{garager.garagerid}" ></h:inputText> 
+               <h:inputText class="tt2"  value="#{garager.phone}"></h:inputText> 
+               <h:inputText class="tt3"  value="#{garager.city}"></h:inputText>
+               <h:inputText class="tt4"  value="#{garager.streetno}"></h:inputText>
+               <h:commandButton value="Submit" class="bt" action="#{garager.gar}"/>
+                <h:commandButton value="Cancel" class="bt1" />
+        </div>
+
+    </h:form>
+</html>
+

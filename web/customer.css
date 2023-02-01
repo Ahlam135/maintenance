@@ -1,0 +1,177 @@
+                    body{
+                background-image: url("image/second.jpg");  
+                background-size: 100%;
+            }
+            .d1{
+                        background-color:rgba(8,14,44,0.7);
+                        width: 40%;
+                        height: 350px;
+                      position: fixed;
+                      top: 150px;
+                      left: 350px;
+                      
+                      
+            }
+                    .l1{
+                        position: fixed;
+                        right: 750px;
+                        top: 170px;
+                        color:white;
+                         font-style:italic;
+                        font-size: 1.7rem; 
+                     
+                    }
+                         
+                    .l2{
+                        position: fixed;
+                        right: 680px;
+                        top: 210px;
+                        color:white;
+                         font-style:italic;
+                        font-size: 1.7rem; 
+                       
+                    }
+                         
+                    .l3{
+                        position: fixed;
+                        right: 705px;               
+                        top: 250px;
+                        color:white;
+                         font-style:italic;
+                        font-size: 1.7rem; 
+                       
+                    }
+                         
+                    .l4{
+                        position: fixed;
+                        right:780px;
+                        top: 290px;            
+                        color:white;
+                         font-style:italic;
+                        font-size: 1.7rem; 
+                       
+                    }
+                     .l5{
+                        position: fixed;
+                        right:695px;       
+                        top: 330px;
+                        color:white;
+                         font-style:italic;
+                        font-size: 1.7rem; 
+                       
+                    }
+                    .l6{
+                          position: fixed;
+                        right: 650px;           
+                        top: 370px;
+                        color:white;
+                         font-style:italic;
+                        font-size: 1.7rem;
+                    }
+                    .l7{
+                          position: fixed;
+                        right: 680px;
+                        top: 410px;
+                        color:white;
+                         font-style:italic;
+                        font-size: 1.7rem;
+                    }
+                    
+                    .txt{
+                        position: fixed;
+                        right:450px;
+                        top: 170px;
+                        color:black;
+                         font-style:italic;
+                        font-size: 1rem; 
+                       
+                    }
+                    .txt1{
+                        position: fixed;
+                        right:450px;
+                        top: 210px;
+                        color:black;
+                         font-style:italic;
+                        font-size: 1rem; 
+                       
+                    }
+                    .txt2{
+                        position: fixed;
+                        right:450px;
+                        top: 250px;
+                        color:black;
+                         font-style:italic;
+                        font-size: 1rem; 
+                       
+                    }
+                    .txt3{
+                        position: fixed;
+                        right: 450px;
+                        top: 290px;
+                        color:black;
+                         font-style:italic;
+                        font-size: 1rem; 
+                       
+                    }
+                     .txt4{
+                        position: fixed;
+                        right:450px;
+                        top: 330px;
+                        color:black;
+                         font-style:italic;
+                        font-size: 1rem; 
+                       
+                    }
+                     .txt5{
+                        position: fixed;
+                        right:450px;
+                        top: 370px;
+                        color:black;
+                         font-style:italic;
+                        font-size: 1rem; 
+                       
+                    }
+                     .txt6{
+                        position: fixed;
+                        right:450px;
+                        top: 410px;
+                        color:black;
+                         font-style:italic;
+                        font-size:1rem; 
+                       
+                    }
+                      .btn{
+                        position: fixed;
+                        right: 570px;
+                        top: 460px;
+                        color:darkslateblue;
+                         font-style:italic;
+                        font-size: 1rem; 
+                       
+                    }
+                    .btn2{
+                        position: fixed;
+                        right: 460px;
+                        top: 460px;
+                        color:darkslateblue;
+                         font-style:italic;
+                        font-size: 1rem; 
+                       
+                    }
+                      
+                    .btn3{
+                        position: fixed;
+                        right: 30px;
+                        top: 20px;
+                        color:darkslateblue;
+                         font-style:italic;
+                        font-size: 1rem; 
+                       
+                    }
+                .h2{
+                font-size:2.5rem;
+                font-style:Bold;
+                
+            }
+           
+                    

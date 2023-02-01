@@ -1,12 +1,86 @@
 <?xml version='1.0' encoding='UTF-8' ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml"
-      xmlns:h="http://xmlns.jcp.org/jsf/html">
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
     <h:head>
         <title>Facelet Title</title>
+        <style> 
+            body{
+                background-color:#65647C;
+                text-align: center;
+                background-size: 80%;
+                margin: 0px;
+                font-family: "Roboto";
+                font-size: 12px;
+                font-weight: 400;
+               
+            }
+            .h2{
+                font-size:20px;
+                font-style:Bold;
+                
+            }
+            table{
+                border-collapse: collapse;
+                width:80%;
+                
+            }
+            th{
+              background-color:white;
+              font-size:1.2rem;
+              color: black;
+              border-style:solid;
+              border-width:1px;
+            }
+            td{
+                  background-color:white;
+              font-size:1.2rem;
+              color:black;
+              border-style:solid;
+              border-width:1px;
+            }
+            
+            </style>
     </h:head>
-    <h:body>
-        Hello from Facelets
-    </h:body>
+  <h:body>  
+      <h:form>
+<h2><h:outputText value="Request List"></h:outputText></h2>  
+<h:dataTable value="#{product.productList}" var="p">
+<h:column>  
+<f:facet name="header">name</f:facet>  
+<h:outputText value="#{p.name}"/>  
+</h:column>  
+<h:column>  
+        <f:facet name="header">id</f:facet>  
+        <h:outputText value="#{p.id}"/>  
+</h:column>  
+<h:column>  
+        <f:facet name="header">model</f:facet>  
+<h:outputText value="#{p.model}"/>  
+</h:column>  
+    <h:column>  
+<f:facet name="header">city</f:facet>  
+<h:outputText value="#{p.city}"/>  
+</h:column> 
+    <h:column>  
+<f:facet name="header">streetno</f:facet>  
+<h:outputText value="#{p.streetno}"/>  
+</h:column> 
+    <h:column>  
+<f:facet name="header">specificloc</f:facet>  
+<h:outputText value="#{p.specificloc}"/>  
+</h:column> 
+    <h:column>  
+<f:facet name="header">plateno</f:facet>  
+<h:outputText value="#{p.plateno}"/>  
+</h:column> 
+       <h:column>   
+   <h:commandButton value="accept"  action="#{p.accept}"></h:commandButton>
+</h:column>
+   </h:dataTable>
+   
+</h:form>
+</h:body>  
 </html>
 

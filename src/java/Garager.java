@@ -2,24 +2,19 @@
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
+import javax.faces.bean.ManagedBean;
+import javax.faces.bean.SessionScoped;
 
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 
-/**
- *
- * @author Ahlam
- */
+@ManagedBean
+@SessionScoped
 public class Garager {
     
   private String name;
-  private String Garagerid;
+  private String garagerid;
   private String phone;
   private String city;
-  private String Streetno;
+  private String streetno;
  
 
   
@@ -32,12 +27,14 @@ public class Garager {
     }
 
     public String getGaragerid() {
-        return Garagerid;
+        return garagerid;
     }
 
-    public void setGaragerid(String Garagerid) {
-        this.Garagerid = Garagerid;
+    public void setGaragerid(String garagerid) {
+        this.garagerid = garagerid;
     }
+
+  
 
     public String getPhone() {
         return phone;
@@ -56,23 +53,23 @@ public class Garager {
     }
 
     public String getStreetno() {
-        return Streetno;
+        return streetno;
     }
 
     public void setStreetno(String Streetno) {
-        this.Streetno = Streetno;
+        this.streetno = Streetno;
     }
     public void gar() {
         try{
             
             dbb d=new dbb();
             Connection connection=d.connMethod();
-            PreparedStatement stmt=connection.prepareStatement("Insert into GARAGE (name,garid,phone,city,streetno) values(?,?,?,?,?)");
+            PreparedStatement stmt=connection.prepareStatement("Insert into GARAGE(name,garid,phone,city,streetno) VALUES(?,?,?,?,?)");
             stmt.setString(1,name);
-            stmt.setString(2,Garagerid);
+            stmt.setString(2,garagerid);
             stmt.setString(3,phone);
             stmt.setString(4,city);
-            stmt.setString(5,Streetno);
+            stmt.setString(5,streetno);
              stmt.executeUpdate();
         }
         catch (SQLException e){

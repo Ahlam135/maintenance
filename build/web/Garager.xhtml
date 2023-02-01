@@ -6,26 +6,20 @@
         <title>Facelet Title</title>
         <style> 
                     body{
-                background-color:black;
+                background-image: url("image/done.jpg");        
                 text-align: center;
                 background-size: 100%;
                 margin: 0px;
                
                         }
-                    .labb
-                    {
-                           position: fixed;
-                        right: 8000px;
-                        top: 230px;
-                    }
-                    .dd{
-                      background-image: url("image/final.jpeg");
-                       background-size: 100%;
-                      
-                        right: 60px;
-                        top: 30px;
-                        height:150;
-                        width:300;
+                   
+                     .labb{
+                        width: 40%;
+                        height: 350px;
+                        background-color: rgba(48,46,80,0.57);
+                       margin-left: 400px;
+                       margin-top:200px;
+                  
                     }
                     .ll1{
                         position: fixed;
@@ -33,7 +27,7 @@
                         top: 230px;
                          color:white;
                          font-style:italic;
-                        font-size: 1.7rem; 
+                        font-size: 1.7rem;
                        
                     }
                          
@@ -145,7 +139,6 @@
                         background-color: rgba(255,255,255,0.5)
                     }
                     
-                    
         </style>
     </h:head>
     <h:body></h:body>
@@ -165,7 +158,8 @@
                <h:commandButton value="Submit" class="bt" action="#{garager.gar}"/>
                 <h:commandButton value="Cancel" class="bt1" />
         </div>
-
+     
+          
     </h:form>
 </html>
 

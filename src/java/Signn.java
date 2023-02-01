@@ -2,15 +2,18 @@
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
+import java.util.Map;
 import javax.faces.bean.ManagedBean;
 import javax.faces.bean.SessionScoped;
+import javax.faces.context.ExternalContext;
+import javax.faces.context.FacesContext;
 
 
 @ManagedBean
 @SessionScoped
 public class Signn {
     
-   private String name;
+  private String name;
   private String id;
   private String model;
   private String city;
@@ -19,18 +22,15 @@ public class Signn {
   private String plateno;
 
 
+String username;
+FacesContext facesContext = FacesContext.getCurrentInstance();
+ExternalContext externalContext = facesContext.getExternalContext();
+Map<String,Object> sessionMap = externalContext.getSessionMap();
+    
+    public Signn() {
+          username=(String) sessionMap.get("user");
 
-    public String getPlateno() {
-        return plateno;
     }
-
-    public void setPlateno(String plateno) {
-        this.plateno = plateno;
-    }
-
-   
- 
-
 
     public String getName() {
         return name;
@@ -79,13 +79,25 @@ public class Signn {
     public void setSpecificloc(String specificloc) {
         this.specificloc = specificloc;
     }
+
+    public String getPlateno() {
+        return plateno;
+    }
+
+    public void setPlateno(String plateno) {
+        this.plateno = plateno;
+    }
+
+   
+
   
-    public void lag() {
-        try{
+  
+    public void lag() throws SQLException {
+     
             
             dbb d=new dbb();
             Connection connection=d.connMethod();
-            PreparedStatement stmt=connection.prepareStatement("Insert into CUSTOMER(name,id,model,city,streetno,specificloc,plateno) values(?,?,?,?,?,?,?)");
+            PreparedStatement stmt=connection.prepareStatement("Insert into CUSTOMER(name,id,model,city,streetno,specificloc,plateno,status,ownerid) values (?,?,?,?,?,?,?,?,?)");
             stmt.setString(1,name);
             stmt.setString(2,id);
             stmt.setString(3,model);
@@ -93,11 +105,12 @@ public class Signn {
             stmt.setString(5,Streetno);
             stmt.setString(6,specificloc);
             stmt.setString(7,plateno);
+           stmt.setString(8,"pending");
+           stmt.setString(9,username);
+
+           
              stmt.executeUpdate();
-        }
-        catch (SQLException e){
-            
-        }
+        
     }
 
 }

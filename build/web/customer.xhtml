@@ -1,36 +1,39 @@
 <?xml version='1.0' encoding='UTF-8' ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml"
-      xmlns:h="http://xmlns.jcp.org/jsf/html">
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
     <h:head>
         <title>Facelet Title</title>
         <style> 
                     body{
-                background-color:black;
-                text-align: center;
+                background-image: url("image/second.jpg");  
                 background-size: 100%;
-                margin: 0px;
             }
-            .d2{
-                        background-image: url("image/carr.webp");    
-                        position: fixed;
-                        right: 200px;
-                        top: 230px;
+            .d1{
+                        background-color:rgba(8,14,44,0.7);
+                        width: 40%;
+                        height: 350px;
+                      position: fixed;
+                      top: 150px;
+                      left: 350px;
+                      
+                      
             }
                     .l1{
                         position: fixed;
                         right: 750px;
-                        top: 230px;
+                        top: 170px;
                         color:white;
                          font-style:italic;
                         font-size: 1.7rem; 
-                       
+                     
                     }
                          
                     .l2{
                         position: fixed;
-                        right: 770px;
-                        top: 270px;
+                        right: 680px;
+                        top: 210px;
                         color:white;
                          font-style:italic;
                         font-size: 1.7rem; 
@@ -39,8 +42,8 @@
                          
                     .l3{
                         position: fixed;
-                        right: 760px;
-                        top: 310px;
+                        right: 705px;               
+                        top: 250px;
                         color:white;
                          font-style:italic;
                         font-size: 1.7rem; 
@@ -49,8 +52,8 @@
                          
                     .l4{
                         position: fixed;
-                        right: 720px;
-                        top: 350px;
+                        right:780px;
+                        top: 290px;            
                         color:white;
                          font-style:italic;
                         font-size: 1.7rem; 
@@ -58,8 +61,8 @@
                     }
                      .l5{
                         position: fixed;
-                        right: 790px;
-                        top: 390px;
+                        right:695px;       
+                        top: 330px;
                         color:white;
                          font-style:italic;
                         font-size: 1.7rem; 
@@ -67,16 +70,16 @@
                     }
                     .l6{
                           position: fixed;
-                        right: 700px;
-                        top: 430px;
+                        right: 650px;           
+                        top: 370px;
                         color:white;
                          font-style:italic;
                         font-size: 1.7rem;
                     }
                     .l7{
                           position: fixed;
-                        right: 700px;
-                        top: 470px;
+                        right: 680px;
+                        top: 410px;
                         color:white;
                          font-style:italic;
                         font-size: 1.7rem;
@@ -84,17 +87,17 @@
                     
                     .txt{
                         position: fixed;
-                        right: 400px;
-                        top: 230px;
-                        color:white;
+                        right:450px;
+                        top: 170px;
+                        color:black;
                          font-style:italic;
                         font-size: 1rem; 
                        
                     }
                     .txt1{
                         position: fixed;
-                        right: 400px;
-                        top: 270px;
+                        right:450px;
+                        top: 210px;
                         color:black;
                          font-style:italic;
                         font-size: 1rem; 
@@ -102,8 +105,8 @@
                     }
                     .txt2{
                         position: fixed;
-                        right: 400px;
-                        top: 310px;
+                        right:450px;
+                        top: 250px;
                         color:black;
                          font-style:italic;
                         font-size: 1rem; 
@@ -111,8 +114,8 @@
                     }
                     .txt3{
                         position: fixed;
-                        right: 400px;
-                        top: 350px;
+                        right: 450px;
+                        top: 290px;
                         color:black;
                          font-style:italic;
                         font-size: 1rem; 
@@ -120,8 +123,8 @@
                     }
                      .txt4{
                         position: fixed;
-                        right: 400px;
-                        top: 390px;
+                        right:450px;
+                        top: 330px;
                         color:black;
                          font-style:italic;
                         font-size: 1rem; 
@@ -129,8 +132,8 @@
                     }
                      .txt5{
                         position: fixed;
-                        right: 400px;
-                        top: 440px;
+                        right:450px;
+                        top: 370px;
                         color:black;
                          font-style:italic;
                         font-size: 1rem; 
@@ -138,17 +141,17 @@
                     }
                      .txt6{
                         position: fixed;
-                        right: 400px;
-                        top: 480px;
+                        right:450px;
+                        top: 410px;
                         color:black;
                          font-style:italic;
-                        font-size: rem; 
+                        font-size:1rem; 
                        
                     }
                       .btn{
                         position: fixed;
-                        right: 500px;
-                        top: 550px;
+                        right: 570px;
+                        top: 460px;
                         color:darkslateblue;
                          font-style:italic;
                         font-size: 1rem; 
@@ -156,21 +159,40 @@
                     }
                     .btn2{
                         position: fixed;
-                        right: 400px;
-                        top: 550px;
+                        right: 460px;
+                        top: 460px;
                         color:darkslateblue;
                          font-style:italic;
                         font-size: 1rem; 
                        
                     }
-                    
+                      
+                    .btn3{
+                        position: fixed;
+                        right: 30px;
+                        top: 20px;
+                        color:darkslateblue;
+                         font-style:italic;
+                        font-size: 1rem; 
+                       
+                    }
+                .h2{
+                font-size:2.5rem;
+                font-style:Bold;
+                
+            }
+           
                     
         </style>
     </h:head>
     <h:body>
-        <h:form>
+        
+ <h:form>
+     
            
             <div class="d1">
+                                </div>
+
               <label class="l1">Name</label>
               <label class="l2">Requester Id</label>
               <label class="l3">Car Model</label>
@@ -178,20 +200,20 @@
               <label class="l5">Street Name</label>
               <label class="l6">Specific location</label>
                <label class="l7">Plate Number</label>
-              <h:inputText class="txt" value="#{signn.name}"></h:inputText> 
-               <h:inputText class="txt1" value="#{signn.id}"></h:inputText> 
+               <h:inputText class="txt" value="#{signn.name}"></h:inputText> 
+               <h:inputText class="txt1" value="#{signn.id}"> </h:inputText> 
                <h:inputText class="txt2" value="#{signn.model}"></h:inputText> 
                <h:inputText class="txt3" value="#{signn.city}"></h:inputText>
                <h:inputText class="txt4" value="#{signn.streetno}"></h:inputText>
                <h:inputText class="txt5" value="#{signn.specificloc}"></h:inputText>
                <h:inputText class="txt6" value="#{signn.plateno}"></h:inputText>
-               <h:commandButton value="Submit" class="btn" action="#{signn.lag}"/>
-                <h:commandButton value="Cancel" class="btn2" />
-                </div>
-            <div class="d2">
-                
-            </div>
-        </h:form>
-    </h:body>
+               <h:commandButton value="Submit" class="btn" action="#{signn.lag()}"/>
+                <h:commandButton value="Cancel" class="btn2"/>
+                <h:commandButton value="Vew your Request" class="btn3" action="view"/>
+
+ 
+</h:form>
+</h:body>
+
 </html>
 

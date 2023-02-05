@@ -15,7 +15,11 @@ public class Garager {
   private String phone;
   private String city;
   private String streetno;
- 
+  private String cid;
+
+    public String getCid() {
+        return cid;
+    }
 
   
     public String getName() {
@@ -59,21 +63,19 @@ public class Garager {
     public void setStreetno(String Streetno) {
         this.streetno = Streetno;
     }
-    public void gar() {
-        try{
+    public void gar() throws SQLException {
+        
             
             dbb d=new dbb();
             Connection connection=d.connMethod();
-            PreparedStatement stmt=connection.prepareStatement("Insert into GARAGE(name,garid,phone,city,streetno) VALUES(?,?,?,?,?)");
+            PreparedStatement stmt=connection.prepareStatement("Insert into GARAGE(name,garid,phone,city,streetno,cid) VALUES(?,?,?,?,?,?)");
             stmt.setString(1,name);
             stmt.setString(2,garagerid);
             stmt.setString(3,phone);
             stmt.setString(4,city);
             stmt.setString(5,streetno);
+            stmt.setString(6,cid); 
              stmt.executeUpdate();
-        }
-        catch (SQLException e){
-            
-        }
+     
     } 
 }
